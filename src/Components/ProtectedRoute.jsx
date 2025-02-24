@@ -1,12 +1,13 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom';
+import { useAuth } from '../Hooks/Context/useAuth';
 
 const ProtectedRoute = ({children}) => {
- 
 
-    const isAuth = localStorage.getItem('auth')=='true';
+    const {isAuthenticated} =useAuth();
 
-    return isAuth ?children:<Navigate to ='/login'/>
+    return isAuthenticated ?children:<Navigate to ="/login"/>
+
 }
 
 export default ProtectedRoute
