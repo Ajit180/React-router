@@ -10,7 +10,10 @@ const Home = () => {
         </nav>
         <div>
             <p>Dashboard</p>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link className='bg-blue-500 text-black px-4 py-2 rounded border-2 border-black' to="/dashboard">Dashboard</Link>
+            <br />
+            <br />
+            <Link className='bg-green-500 text-white px-4 py-2 rounded border-2 border-black' to={"/Dialog"}>Dialog</Link>
         </div>
     </div>
   )

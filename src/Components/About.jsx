@@ -29,8 +29,11 @@ const About = () => {
   return (
     <div>
        <h1>This is the Contact Page</h1>
-       <button onClick={()=>setCount((count)=>count+1)}>Count is {count}</button> <br />
+       <button className='bg-blue-500 text-black px-4 py-2 rounded border-2 border-black'
+        onClick={()=>setCount((count)=>count+1)}>Count is {count}</button>
+        <br />
        <Link to="/contact">Contact</Link>
+       
     </div>
   )
 }

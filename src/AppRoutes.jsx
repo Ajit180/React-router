@@ -8,6 +8,7 @@ import UserProfile from "./Components/UserProfile";
 import NotFound from "./Pages/NotFound";
 // import ProtectedRoute from "./Components/ProtectedRoute";
 import Login from "./Components/Login";
+import RenderStateChanges from "./Components/RenderStateChanges";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,8 @@ const AppRoutes = () => {
 
       {/* Dynamic Route with useParams */}
       <Route path="/user/:id" element={<UserProfile />} />
+      
+      <Route path="/Dialog" element={<RenderStateChanges/>}/>
 
       {/* 404 page  */}
       <Route path="*" element={<NotFound />} />
